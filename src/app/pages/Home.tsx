@@ -2,8 +2,8 @@ import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import logo from '../../imports/logo.png';
 import logoOutline from '../../imports/logo-outline.png';
-import transcendentalImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_08_30_PM.png';
-import fitRadioImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_40_16_PM.png';
+import transcendentalImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_08_30_PM.webp';
+import fitRadioImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_40_16_PM.webp';
 
 const caseStudies = [
   {
