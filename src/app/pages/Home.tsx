@@ -2,19 +2,21 @@ import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import logo from '../../imports/logo.png';
 import logoOutline from '../../imports/logo-outline.png';
+import transcendentalImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_08_30_PM.png';
+import fitRadioImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_40_16_PM.png';
 
 const caseStudies = [
   {
-    id: 'studio-magazine',
-    title: 'Studio Magazine',
-    image: 'https://images.unsplash.com/photo-1606135703721-fe8f08b95b4e?w=600&h=450&fit=crop',
-    alt: 'Brand Identity Project'
+    id: 'transcendental-meditation',
+    title: 'Transcendental Meditation',
+    image: transcendentalImg,
+    alt: 'Transcendental Meditation'
   },
   {
-    id: 'visual-identity',
-    title: 'Visual Identity',
-    image: 'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=600&h=450&fit=crop',
-    alt: 'Circular Design'
+    id: 'fitradio',
+    title: 'FitRadio',
+    image: fitRadioImg,
+    alt: 'FitRadio'
   },
   {
     id: 'app-interface',

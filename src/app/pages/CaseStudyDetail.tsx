@@ -15,12 +15,12 @@ const caseStudyData: Record<string, {
   challenge: string;
   solution: string;
 }> = {
-  'studio-magazine': {
-    title: 'Studio Magazine',
+  'transcendental-meditation': {
+    title: 'Transcendental Meditation',
     description: 'Brand Identity & Editorial Design',
     role: 'Lead Designer',
     year: '2024',
-    client: 'Studio Magazine',
+    client: 'Transcendental Meditation',
     heroImage: 'https://images.unsplash.com/photo-1606135703721-fe8f08b95b4e?w=1200&h=800&fit=crop',
     images: [
       'https://images.unsplash.com/photo-1606135703721-fe8f08b95b4e?w=1200&h=800&fit=crop',
@@ -30,12 +30,12 @@ const caseStudyData: Record<string, {
     challenge: 'The magazine needed a fresh visual identity that would stand out in a crowded market while maintaining readability and elegance.',
     solution: 'Developed a minimal yet distinctive brand system with custom typography, a flexible grid system, and a sophisticated color palette that works across print and digital.'
   },
-  'visual-identity': {
-    title: 'Visual Identity',
+  'fitradio': {
+    title: 'FitRadio',
     description: 'Brand Design & Systems',
     role: 'Brand Designer',
     year: '2024',
-    client: 'Modern Brand Co.',
+    client: 'FitRadio',
     heroImage: 'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=1200&h=800&fit=crop',
     images: [
       'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=1200&h=800&fit=crop',
