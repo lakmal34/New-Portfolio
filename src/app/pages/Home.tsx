@@ -2,8 +2,10 @@ import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import logo from '../../imports/logo.png';
 import logoOutline from '../../imports/logo-outline.png';
-import transcendentalImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_08_30_PM.webp';
-import fitRadioImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_40_16_PM.webp';
+import transcendentalImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_08_30_PM.png';
+import fitRadioImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_40_16_PM.png';
+import bizzHubImg from '../../imports/ChatGPT_Image_Jun_6__2026__06_22_56_PM.png';
+import livingSpaceImg from '../../imports/ChatGPT_Image_Jun_9__2026__06_35_56_PM.png';
 
 const caseStudies = [
   {
@@ -19,16 +21,16 @@ const caseStudies = [
     alt: 'FitRadio'
   },
   {
-    id: 'app-interface',
-    title: 'App Interface',
-    image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=450&fit=crop',
-    alt: 'Mobile App Design'
+    id: 'bizzhub',
+    title: 'BizzHub',
+    image: bizzHubImg,
+    alt: 'BizzHub'
   },
   {
-    id: 'living-space',
-    title: 'Living Space',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=450&fit=crop',
-    alt: 'Interior Design'
+    id: 'project-management',
+    title: 'Project Management',
+    image: livingSpaceImg,
+    alt: 'Project Management'
   }
 ];
 

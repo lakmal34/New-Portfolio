@@ -45,12 +45,12 @@ const caseStudyData: Record<string, {
     challenge: 'Creating a cohesive brand identity that communicates innovation while remaining timeless.',
     solution: 'Built a comprehensive design system including logo, color palette, typography, and brand guidelines that scale across all touchpoints.'
   },
-  'app-interface': {
-    title: 'App Interface',
+  'bizzhub': {
+    title: 'BizzHub',
     description: 'Mobile Application Design',
     role: 'UX/UI Designer',
     year: '2024',
-    client: 'Tech Startup',
+    client: 'BizzHub',
     heroImage: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=800&fit=crop',
     images: [
       'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=800&fit=crop',
@@ -60,12 +60,12 @@ const caseStudyData: Record<string, {
     challenge: 'Balancing feature complexity with ease of use for first-time users.',
     solution: 'Created a clean, gesture-based interface with progressive disclosure, onboarding flows, and thoughtful micro-interactions.'
   },
-  'living-space': {
-    title: 'Living Space',
+  'project-management': {
+    title: 'Project Management',
     description: 'Interior Design Showcase',
     role: 'Creative Director',
     year: '2024',
-    client: 'Interior Design Studio',
+    client: 'Project Management',
     heroImage: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop',
     images: [
       'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=800&fit=crop',
