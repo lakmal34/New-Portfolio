@@ -79,14 +79,71 @@ export function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="px-6 py-20 max-w-2xl mx-auto text-center">
-        <p className="text-lg md:text-xl leading-relaxed mb-8">
-          I help sustainable & ethical brands get the positive attention they deserve, because I believe design can play a positive thing.
-        </p>
-        <button className="px-8 py-3 bg-black text-white text-sm hover:bg-gray-800 transition-colors">
-          Contact
-        </button>
+      {/* Process Section */}
+      <section className="px-6 py-20 max-w-4xl mx-auto">
+        <div className="relative flex items-start justify-between mb-20">
+          <div className="absolute top-4 left-0 right-0 border-t border-dashed border-gray-300 mx-12" />
+          {[
+            {
+              label: 'Discover',
+              icon: (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              )
+            },
+            {
+              label: 'Learn',
+              icon: (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              )
+            },
+            {
+              label: 'Build',
+              icon: (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+              )
+            },
+            {
+              label: 'Launch',
+              icon: (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/>
+                </svg>
+              )
+            },
+            {
+              label: 'Improve',
+              icon: (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+              )
+            },
+          ].map((step) => (
+            <div key={step.label} className="relative flex flex-col items-center gap-3 z-10">
+              <div className="w-8 h-8 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-600">
+                {step.icon}
+              </div>
+              <span className="text-xs text-gray-500">{step.label}</span>
+            </div>
+          ))}
+        </div>
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl mb-6" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+            Every product is a journey.
+          </h2>
+          <p className="text-base md:text-lg leading-relaxed text-gray-600 mb-10">
+            Whether it's finding calm, buying a first home, managing complex projects, or making confident business decisions, I design experiences that help people move forward with clarity.
+          </p>
+          <button className="px-8 py-3 bg-black text-white text-sm hover:bg-gray-800 transition-colors">
+            Let's work together
+          </button>
+        </div>
       </section>
 
       {/* Footer */}
