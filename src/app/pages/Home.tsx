@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import logo from '../../imports/logo.png';
 import logoOutline from '../../imports/logo-outline.png';
+import figmaCommunityImg from '../../imports/ChatGPT_Image_Jun_9__2026__08_09_30_PM.png';
 import transcendentalImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_08_30_PM.png';
 import fitRadioImg from '../../imports/ChatGPT_Image_Jun_6__2026__04_40_16_PM.png';
 import bizzHubImg from '../../imports/ChatGPT_Image_Jun_6__2026__06_22_56_PM.png';
@@ -146,10 +147,41 @@ export function Home() {
         </div>
       </section>
 
+      {/* Figma Community Section */}
+      <section className="px-6 py-20 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left */}
+          <div>
+            <p className="text-6xl md:text-7xl mb-3" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>18.6K+</p>
+            <p className="text-xs tracking-widest uppercase text-gray-500 mb-8">Figma Community Downloads</p>
+            <p className="text-sm leading-relaxed text-gray-600 mb-8">
+              Design systems and UI libraries trusted by thousands of designers around the world.
+            </p>
+            <a href="https://www.figma.com/@lakmal" target="_blank" rel="noopener noreferrer" className="text-sm flex items-center gap-2 hover:opacity-60 transition-opacity">
+              View Community Profile <span>→</span>
+            </a>
+          </div>
+          {/* Right — mockup */}
+          <div className="rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+            <ImageWithFallback
+              src={figmaCommunityImg}
+              alt="Figma Design System"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="px-6 py-12 max-w-7xl mx-auto">
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center gap-6">
           <img src={logoOutline} alt="Lakmal" className="w-[72px] h-[72px]" />
+          <p className="text-xs text-gray-400">© 2026 Lakmal Kaviratne. All rights reserved.</p>
+          <nav className="flex gap-8 text-xs tracking-widest uppercase text-gray-500">
+            <a href="#" className="hover:opacity-60 transition-opacity">Work</a>
+            <a href="#" className="hover:opacity-60 transition-opacity">About</a>
+            <a href="#" className="hover:opacity-60 transition-opacity">Contact</a>
+          </nav>
         </div>
       </footer>
     </div>
