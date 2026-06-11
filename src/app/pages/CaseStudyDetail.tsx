@@ -17,7 +17,7 @@ const caseStudyData: Record<string, {
 }> = {
   'transcendental-meditation': {
     title: 'Transcendental Meditation',
-    description: 'Brand Identity & Editorial Design',
+    description: 'Creating a digital experience that reflects the simplicity and clarity of the TM practice.',
     role: 'Lead Designer',
     year: '2024',
     client: 'Transcendental Meditation',
@@ -26,9 +26,9 @@ const caseStudyData: Record<string, {
       'https://images.unsplash.com/photo-1606135703721-fe8f08b95b4e?w=1200&h=800&fit=crop',
       'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=1200&h=800&fit=crop'
     ],
-    overview: 'A comprehensive brand identity and editorial design system for a modern creative magazine.',
-    challenge: 'The magazine needed a fresh visual identity that would stand out in a crowded market while maintaining readability and elegance.',
-    solution: 'Developed a minimal yet distinctive brand system with custom typography, a flexible grid system, and a sophisticated color palette that works across print and digital.'
+    overview: `Transcendental Meditation has helped millions of people worldwide, yet the digital experience didn't fully reflect the simplicity, trust, and calmness associated with the practice. The existing website contained a large amount of information, multiple user journeys, and diverse audience needs ranging from first-time visitors to experienced practitioners. The challenge was to simplify the experience, improve content discoverability, and create a cohesive design language that could scale across the organisation's digital ecosystem.`,
+    challenge: 'Before attending a course, most visitors move through several stages.',
+    solution: 'A core design principle was ensuring the interface reflected the philosophy behind the practice itself.'
   },
   'fitradio': {
     title: 'FitRadio',
@@ -158,23 +158,83 @@ export function CaseStudyDetail() {
         <div className="space-y-16">
           <div>
             <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
-              Overview
+              The Challenge
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">{study.overview}</p>
           </div>
 
           <div>
             <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
-              Challenge
+              Understanding the Journey
             </h2>
-            <p className="text-lg leading-relaxed text-gray-700">{study.challenge}</p>
+            <p className="text-lg leading-relaxed text-gray-700 mb-8">{study.challenge}</p>
+            <div className="flex flex-wrap items-center gap-2">
+              {['Curiosity', 'Learning', 'Trust Building', 'Finding a Local Centre', 'Course Enrolment', 'Practice'].map((step, i, arr) => (
+                <div key={step} className="flex items-center gap-2">
+                  <span className="text-sm text-gray-600 border border-gray-200 rounded-full px-4 py-1.5">{step}</span>
+                  {i < arr.length - 1 && <span className="text-gray-300">→</span>}
+                </div>
+              ))}
+            </div>
+            <p className="text-lg leading-relaxed text-gray-700 mt-8">The design needed to support each stage without overwhelming users with information.</p>
           </div>
 
           <div>
             <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
-              Solution
+              Designing for Calm
             </h2>
-            <p className="text-lg leading-relaxed text-gray-700">{study.solution}</p>
+            <p className="text-lg leading-relaxed text-gray-700 mb-6">{study.solution}</p>
+            <p className="text-lg text-gray-700 mb-4">The experience focused on:</p>
+            <ul className="space-y-2 mb-8">
+              {['Reduced visual noise', 'Clear information hierarchy', 'Guided content journeys', 'Improved readability', 'Intentional use of whitespace', 'Consistent interaction patterns'].map((item) => (
+                <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                  <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-lg leading-relaxed text-gray-700">Rather than competing for attention, the interface was designed to create a sense of clarity and focus.</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+              Building a Scalable Design System
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-700 mb-6">One of the most significant parts of the project was establishing a reusable design system.</p>
+            <p className="text-lg text-gray-700 mb-4">The system included:</p>
+            <ul className="space-y-2 mb-8">
+              {['Design foundations', 'Typography standards', 'Colour tokens', 'Spacing scales', 'Reusable components', 'Responsive patterns', 'Accessibility guidelines'].map((item) => (
+                <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                  <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-lg leading-relaxed text-gray-700">The goal was to create a shared language that could support future growth while maintaining consistency across the experience.</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+              Creating Consistency at Scale
+            </h2>
+            <p className="text-lg text-gray-700 mb-4">The design system enabled:</p>
+            <ul className="space-y-2 mb-8">
+              {['Faster design iteration', 'Improved collaboration', 'More consistent user experiences', 'Easier maintenance and expansion'].map((item) => (
+                <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                  <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-lg leading-relaxed text-gray-700">By moving from isolated page designs to a system-based approach, the organisation gained a foundation capable of supporting future digital initiatives.</p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+              Outcome
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-700 mb-6">The redesigned experience better aligned the digital product with the values of the organisation.</p>
+            <p className="text-lg leading-relaxed text-gray-700">The result was a clearer information architecture, a more approachable user journey, and a scalable design foundation that supports both current and future needs.</p>
           </div>
         </div>
       </section>
