@@ -5,6 +5,7 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import logo from '../../imports/logo.png';
 import logoOutline from '../../imports/logo-outline.png';
 import tmVideo from '../../imports/TM_Portfolio_Showcase_45s.mp4';
+import fitRadioVideo from '../../imports/FitRadio_Showcase_HiRes_45s.mp4';
 import homepageDesktop from '../../imports/Homepage_desktop.png';
 import whatisTMpage from '../../imports/WhatisTMpage_desktop.png';
 import taughtByNonProfit from '../../imports/TaughtbyNonProfit_desktop.png';
@@ -47,11 +48,12 @@ const caseStudyData: Record<string, {
   },
   'fitradio': {
     title: 'FitRadio',
-    description: 'Brand Design & Systems',
-    role: 'Brand Designer',
+    description: 'Transforming FitRadio Through a Unified Design Language.',
+    role: 'UI/UX Designer',
     year: '2024',
     client: 'FitRadio',
     heroImage: 'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=1200&h=800&fit=crop',
+    heroVideo: fitRadioVideo,
     images: [
       'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=1200&h=800&fit=crop',
       'https://images.unsplash.com/photo-1606135703721-fe8f08b95b4e?w=1200&h=800&fit=crop',
