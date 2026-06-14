@@ -6,7 +6,12 @@
   "scripts": {
     "build": "vite build",
     "convert:webp": "node scripts/convert-to-webp.mjs",
+<<<<<<< HEAD
     "optimize:images": "node scripts/convert-to-webp.mjs"
+=======
+    "optimize:images": "node scripts/convert-to-webp.mjs",
+    "dev": "vite"
+>>>>>>> 1f9d50190 (ui)
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -94,4 +99,8 @@
       "sharp"
     ]
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1f9d50190 (ui)

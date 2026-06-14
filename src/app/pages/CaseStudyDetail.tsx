@@ -12,6 +12,13 @@ import taughtByNonProfit from '../../imports/TaughtbyNonProfit_desktop.png';
 import learnTM from '../../imports/LearnTM_desktop.png';
 import singleTMCenter from '../../imports/SingleTMCenter_desktop.png';
 import bookLocal from '../../imports/BookLocal_desktop-6.png';
+<<<<<<< HEAD
+=======
+import fitRadioLogin from '../../imports/Login.png';
+import fitRadioPlayer from '../../imports/Player-1.png';
+import fitRadioPlayer2 from '../../imports/Player.png';
+import fitRadioStartSession from '../../imports/Start_Session.png';
+>>>>>>> 1f9d50190 (ui)
 
 const caseStudyData: Record<string, {
   title: string;
@@ -23,7 +30,38 @@ const caseStudyData: Record<string, {
   heroVideo?: string;
   images: string[];
   overview: string;
+<<<<<<< HEAD
   challenge: string;
+=======
+  keyChallenges?: string[];
+  keyChallengesConclusion?: string;
+  challenge: string;
+  journeySteps?: { label: string; description: string }[];
+  journeyInsight?: { intro: string; qualities: string[]; conclusion: string };
+  outcomeContent?: {
+    intro: string;
+    outcomes: string[];
+  };
+  scaleContent?: {
+    intro: string;
+    items: { title: string; description: string }[];
+    conclusion: string;
+  };
+  designSystemContent?: {
+    intro: string;
+    categories: { title: string; items: string[] }[];
+    conclusion: string;
+  };
+  designSectionTitle?: string;
+  designSectionContent?: {
+    intro: string;
+    principlesTitle: string;
+    principles: { title: string; description: string }[];
+    visualTitle: string;
+    visualList: string[];
+    conclusion: string;
+  };
+>>>>>>> 1f9d50190 (ui)
   solution: string;
 }> = {
   'transcendental-meditation': {
@@ -55,6 +93,7 @@ const caseStudyData: Record<string, {
     heroImage: 'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=1200&h=800&fit=crop',
     heroVideo: fitRadioVideo,
     images: [
+<<<<<<< HEAD
       'https://images.unsplash.com/photo-1615799936413-7e1cd55d55e5?w=1200&h=800&fit=crop',
       'https://images.unsplash.com/photo-1606135703721-fe8f08b95b4e?w=1200&h=800&fit=crop',
       'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=800&fit=crop',
@@ -64,6 +103,90 @@ const caseStudyData: Record<string, {
     ],
     overview: 'A complete visual identity system for a forward-thinking brand.',
     challenge: 'Creating a cohesive brand identity that communicates innovation while remaining timeless.',
+=======
+      fitRadioLogin,
+      fitRadioPlayer,
+      fitRadioPlayer2,
+      fitRadioStartSession,
+      'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200&h=800&fit=crop',
+      'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1200&h=800&fit=crop',
+    ],
+    overview: 'FitRadio had evolved over time, introducing new features and experiences without a shared design foundation. As a result, the product began to show signs of inconsistency across screens, patterns, and interactions.',
+    keyChallenges: [
+      'Inconsistent visual language and components',
+      'Fragmented user experiences across different workflows',
+      'Repeated design decisions and duplicated effort',
+      'Limited scalability for future features',
+      'Lack of a single source of truth for design and development',
+    ],
+    keyChallengesConclusion: "The challenge wasn't simply to redesign screens—it was to create a foundation that could support FitRadio's future growth while preserving its high-energy brand identity.",
+    challenge: 'Before designing solutions, I mapped how users move through the product and where friction existed.',
+    journeySteps: [
+      { label: 'Discover', description: 'Explore workout programs and music' },
+      { label: 'Select', description: 'Find the right trainer, playlist, or workout' },
+      { label: 'Commit', description: 'Start and maintain workout sessions' },
+      { label: 'Track', description: 'Monitor progress and build habits' },
+      { label: 'Return', description: 'Re-engage and continue their fitness journey' },
+    ],
+    journeyInsight: {
+      intro: 'By understanding motivations and pain points at each stage, it became clear that users needed an experience that felt:',
+      qualities: ['Fast', 'Focused', 'Motivating', 'Consistent'],
+      conclusion: 'The experience should energize users rather than distract them.',
+    },
+    outcomeContent: {
+      intro: 'The project transformed FitRadio from a collection of evolving interfaces into a cohesive, scalable product ecosystem.',
+      outcomes: [
+        'Redesigned the FitRadio experience around motivation and usability',
+        'Established a unified design language across the product',
+        'Built a scalable design system and component library',
+        'Created a shared source of truth for design and development',
+        'Enabled future growth through reusable foundations and patterns',
+      ],
+    },
+    scaleContent: {
+      intro: 'A design system only succeeds when it creates alignment across teams.\n\nThe system enabled:',
+      items: [
+        { title: 'Faster Design Iterations', description: 'Reusable patterns reduced repetitive work.' },
+        { title: 'Better Developer Handoff', description: 'Clear specifications and standardized components improved implementation quality.' },
+        { title: 'Brand Consistency', description: 'Every interaction felt recognizably FitRadio.' },
+        { title: 'Easier Product Expansion', description: 'New features could be introduced without reinventing patterns.' },
+        { title: 'Cross-Team Collaboration', description: 'Design and engineering worked from the same language and shared foundations.' },
+      ],
+      conclusion: 'Consistency was no longer a maintenance task—it became an inherent property of the product.',
+    },
+    designSystemContent: {
+      intro: 'The redesign revealed a larger opportunity: establish a shared foundation that would allow FitRadio to scale efficiently.\n\nI designed a comprehensive design system that included:',
+      categories: [
+        {
+          title: 'Foundations',
+          items: ['Colour system', 'Typography scale', 'Spacing system', 'Grid and layout principles', 'Elevation and shadows', 'Motion principles'],
+        },
+        {
+          title: 'Components',
+          items: ['Buttons', 'Inputs', 'Cards', 'Navigation patterns', 'Modals', 'Player controls', 'Progress indicators', 'Feedback states'],
+        },
+        {
+          title: 'Design Tokens',
+          items: ['Semantic colour tokens', 'Typography tokens', 'Spacing tokens', 'Radius and elevation tokens'],
+        },
+      ],
+      conclusion: 'The design system became a single source of truth, enabling both designers and developers to work more efficiently and consistently.',
+    },
+    designSectionTitle: 'Designing for Energy',
+    designSectionContent: {
+      intro: 'Fitness products succeed when they create momentum.\n\nThe redesign focused on translating the emotional energy of music and movement into the interface.',
+      principlesTitle: 'Design Principles',
+      principles: [
+        { title: 'Move with Purpose', description: 'Reduce friction and keep users progressing toward their workout goals.' },
+        { title: 'Create Momentum', description: 'Use hierarchy, motion, and clear actions to encourage continuous engagement.' },
+        { title: 'Amplify Motivation', description: 'Celebrate achievements and maintain an energetic atmosphere through visuals and interactions.' },
+        { title: 'Simplify Decisions', description: 'Present information clearly so users can focus on exercising rather than navigating.' },
+      ],
+      visualTitle: 'Visual Direction',
+      visualList: ['Bold typography', 'High contrast', 'Vibrant brand colours', 'Dynamic layouts', 'Purposeful motion and transitions', 'Clear and accessible interaction patterns'],
+      conclusion: 'The result was an experience that felt alive, energetic, and aligned with the FitRadio brand.',
+    },
+>>>>>>> 1f9d50190 (ui)
     solution: 'Built a comprehensive design system including logo, color palette, typography, and brand guidelines that scale across all touchpoints.'
   },
   'bizzhub': {
@@ -234,6 +357,27 @@ export function CaseStudyDetail() {
               The Challenge
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">{study.overview}</p>
+<<<<<<< HEAD
+=======
+            {study.keyChallenges && (
+              <div className="mt-8">
+                <h3 className="text-lg mb-4 text-gray-900" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+                  Key Challenges
+                </h3>
+                <ul className="space-y-2 mb-6">
+                  {study.keyChallenges.map((item) => (
+                    <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                {study.keyChallengesConclusion && (
+                  <p className="text-lg leading-relaxed text-gray-700">{study.keyChallengesConclusion}</p>
+                )}
+              </div>
+            )}
+>>>>>>> 1f9d50190 (ui)
           </div>
 
           <div>
@@ -241,6 +385,7 @@ export function CaseStudyDetail() {
               Understanding the Journey
             </h2>
             <p className="text-lg leading-relaxed text-gray-700 mb-8">{study.challenge}</p>
+<<<<<<< HEAD
             <div className="flex flex-wrap items-center gap-2">
               {['Curiosity', 'Learning', 'Trust Building', 'Finding a Local Centre', 'Course Enrolment', 'Practice'].map((step, i, arr) => (
                 <div key={step} className="flex items-center gap-2">
@@ -250,10 +395,51 @@ export function CaseStudyDetail() {
               ))}
             </div>
             <p className="text-lg leading-relaxed text-gray-700 mt-8">The design needed to support each stage without overwhelming users with information.</p>
+=======
+            {study.journeySteps ? (
+              <div className="flex flex-wrap items-start gap-3">
+                {study.journeySteps.map((step, i, arr) => (
+                  <div key={step.label} className="flex items-start gap-3">
+                    <div className="flex flex-col items-center">
+                      <span className="text-sm text-gray-600 border border-gray-200 rounded-full px-4 py-1.5 whitespace-nowrap">{step.label}</span>
+                      <span className="text-xs text-gray-400 mt-1.5 text-center max-w-[120px]">{step.description}</span>
+                    </div>
+                    {i < arr.length - 1 && <span className="text-gray-300 mt-2">→</span>}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-wrap items-center gap-2">
+                {['Curiosity', 'Learning', 'Trust Building', 'Finding a Local Centre', 'Course Enrolment', 'Practice'].map((step, i, arr) => (
+                  <div key={step} className="flex items-center gap-2">
+                    <span className="text-sm text-gray-600 border border-gray-200 rounded-full px-4 py-1.5">{step}</span>
+                    {i < arr.length - 1 && <span className="text-gray-300">→</span>}
+                  </div>
+                ))}
+              </div>
+            )}
+            {study.journeyInsight ? (
+              <div className="mt-8">
+                <p className="text-lg leading-relaxed text-gray-700 mb-4">{study.journeyInsight.intro}</p>
+                <ul className="space-y-2 mb-6">
+                  {study.journeyInsight.qualities.map((q) => (
+                    <li key={q} className="text-lg text-gray-700 flex items-start gap-3">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                      {q}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-lg leading-relaxed text-gray-700">{study.journeyInsight.conclusion}</p>
+              </div>
+            ) : (
+              <p className="text-lg leading-relaxed text-gray-700 mt-8">The design needed to support each stage without overwhelming users with information.</p>
+            )}
+>>>>>>> 1f9d50190 (ui)
           </div>
 
           <div>
             <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+<<<<<<< HEAD
               Designing for Calm
             </h2>
             <p className="text-lg leading-relaxed text-gray-700 mb-6">{study.solution}</p>
@@ -267,12 +453,61 @@ export function CaseStudyDetail() {
               ))}
             </ul>
             <p className="text-lg leading-relaxed text-gray-700">Rather than competing for attention, the interface was designed to create a sense of clarity and focus.</p>
+=======
+              {study.designSectionTitle ?? 'Designing for Calm'}
+            </h2>
+            {study.designSectionContent ? (
+              <>
+                {study.designSectionContent.intro.split('\n\n').map((para, i) => (
+                  <p key={i} className="text-lg leading-relaxed text-gray-700 mb-6">{para}</p>
+                ))}
+                <h3 className="text-lg mb-4 text-gray-900" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+                  {study.designSectionContent.principlesTitle}
+                </h3>
+                <div className="space-y-4 mb-8">
+                  {study.designSectionContent.principles.map((p) => (
+                    <div key={p.title}>
+                      <p className="text-base text-gray-900 mb-1">{p.title}</p>
+                      <p className="text-base text-gray-600">{p.description}</p>
+                    </div>
+                  ))}
+                </div>
+                <h3 className="text-lg mb-4 text-gray-900" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
+                  {study.designSectionContent.visualTitle}
+                </h3>
+                <ul className="space-y-2 mb-8">
+                  {study.designSectionContent.visualList.map((item) => (
+                    <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-lg leading-relaxed text-gray-700">{study.designSectionContent.conclusion}</p>
+              </>
+            ) : (
+              <>
+                <p className="text-lg leading-relaxed text-gray-700 mb-6">{study.solution}</p>
+                <p className="text-lg text-gray-700 mb-4">The experience focused on:</p>
+                <ul className="space-y-2 mb-8">
+                  {['Reduced visual noise', 'Clear information hierarchy', 'Guided content journeys', 'Improved readability', 'Intentional use of whitespace', 'Consistent interaction patterns'].map((item) => (
+                    <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-lg leading-relaxed text-gray-700">Rather than competing for attention, the interface was designed to create a sense of clarity and focus.</p>
+              </>
+            )}
+>>>>>>> 1f9d50190 (ui)
           </div>
 
           <div>
             <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
               Building a Scalable Design System
             </h2>
+<<<<<<< HEAD
             <p className="text-lg leading-relaxed text-gray-700 mb-6">One of the most significant parts of the project was establishing a reusable design system.</p>
             <p className="text-lg text-gray-700 mb-4">The system included:</p>
             <ul className="space-y-2 mb-8">
@@ -284,12 +519,52 @@ export function CaseStudyDetail() {
               ))}
             </ul>
             <p className="text-lg leading-relaxed text-gray-700">The goal was to create a shared language that could support future growth while maintaining consistency across the experience.</p>
+=======
+            {study.designSystemContent ? (
+              <>
+                {study.designSystemContent.intro.split('\n\n').map((para, i) => (
+                  <p key={i} className="text-lg leading-relaxed text-gray-700 mb-6">{para}</p>
+                ))}
+                <div className="space-y-8 mb-8">
+                  {study.designSystemContent.categories.map((cat) => (
+                    <div key={cat.title}>
+                      <h3 className="text-lg mb-3 text-gray-900" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>{cat.title}</h3>
+                      <ul className="space-y-2">
+                        {cat.items.map((item) => (
+                          <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                            <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-lg leading-relaxed text-gray-700">{study.designSystemContent.conclusion}</p>
+              </>
+            ) : (
+              <>
+                <p className="text-lg leading-relaxed text-gray-700 mb-6">One of the most significant parts of the project was establishing a reusable design system.</p>
+                <p className="text-lg text-gray-700 mb-4">The system included:</p>
+                <ul className="space-y-2 mb-8">
+                  {['Design foundations', 'Typography standards', 'Colour tokens', 'Spacing scales', 'Reusable components', 'Responsive patterns', 'Accessibility guidelines'].map((item) => (
+                    <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-lg leading-relaxed text-gray-700">The goal was to create a shared language that could support future growth while maintaining consistency across the experience.</p>
+              </>
+            )}
+>>>>>>> 1f9d50190 (ui)
           </div>
 
           <div>
             <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
               Creating Consistency at Scale
             </h2>
+<<<<<<< HEAD
             <p className="text-lg text-gray-700 mb-4">The design system enabled:</p>
             <ul className="space-y-2 mb-8">
               {['Faster design iteration', 'Improved collaboration', 'More consistent user experiences', 'Easier maintenance and expansion'].map((item) => (
@@ -300,12 +575,44 @@ export function CaseStudyDetail() {
               ))}
             </ul>
             <p className="text-lg leading-relaxed text-gray-700">By moving from isolated page designs to a system-based approach, the organisation gained a foundation capable of supporting future digital initiatives.</p>
+=======
+            {study.scaleContent ? (
+              <>
+                {study.scaleContent.intro.split('\n\n').map((para, i) => (
+                  <p key={i} className="text-lg leading-relaxed text-gray-700 mb-6">{para}</p>
+                ))}
+                <div className="space-y-4 mb-8">
+                  {study.scaleContent.items.map((item) => (
+                    <div key={item.title}>
+                      <p className="text-base text-gray-900 mb-1">{item.title}</p>
+                      <p className="text-base text-gray-600">{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-lg leading-relaxed text-gray-700">{study.scaleContent.conclusion}</p>
+              </>
+            ) : (
+              <>
+                <p className="text-lg text-gray-700 mb-4">The design system enabled:</p>
+                <ul className="space-y-2 mb-8">
+                  {['Faster design iteration', 'Improved collaboration', 'More consistent user experiences', 'Easier maintenance and expansion'].map((item) => (
+                    <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-gray-400 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-lg leading-relaxed text-gray-700">By moving from isolated page designs to a system-based approach, the organisation gained a foundation capable of supporting future digital initiatives.</p>
+              </>
+            )}
+>>>>>>> 1f9d50190 (ui)
           </div>
 
           <div>
             <h2 className="text-2xl mb-4" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>
               Outcome
             </h2>
+<<<<<<< HEAD
             <p className="text-lg leading-relaxed text-gray-700 mb-6">The redesigned experience better aligned the digital product with the values of the organisation.</p>
             <p className="text-lg leading-relaxed text-gray-700">The result was a clearer information architecture, a more approachable user journey, and a scalable design foundation that supports both current and future needs.</p>
           </div>
@@ -316,6 +623,27 @@ export function CaseStudyDetail() {
             </h2>
             <p className="text-lg leading-relaxed text-gray-700 mb-6">The redesigned experience better aligned the digital product with the values of the organisation.</p>
             <p className="text-lg leading-relaxed text-gray-700">The result was a clearer information architecture, a more approachable user journey, and a scalable design foundation that supports both current and future needs.</p>
+=======
+            {study.outcomeContent ? (
+              <>
+                <p className="text-lg leading-relaxed text-gray-700 mb-8">{study.outcomeContent.intro}</p>
+                <h3 className="text-lg mb-4 text-gray-900" style={{ fontFamily: '"Fraunces", serif', fontWeight: 400 }}>Outcomes</h3>
+                <ul className="space-y-3">
+                  {study.outcomeContent.outcomes.map((item) => (
+                    <li key={item} className="text-lg text-gray-700 flex items-start gap-3">
+                      <span className="text-gray-900 flex-shrink-0">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <>
+                <p className="text-lg leading-relaxed text-gray-700 mb-6">The redesigned experience better aligned the digital product with the values of the organisation.</p>
+                <p className="text-lg leading-relaxed text-gray-700">The result was a clearer information architecture, a more approachable user journey, and a scalable design foundation that supports both current and future needs.</p>
+              </>
+            )}
+>>>>>>> 1f9d50190 (ui)
           </div>
         </div>
       </section>

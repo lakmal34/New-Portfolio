@@ -1,2 +1,10 @@
 packages:
+<<<<<<< HEAD
   - '.'
+=======
+  - '.'
+allowBuilds:
+  '@tailwindcss/oxide': false
+  esbuild: false
+  sharp: false
+>>>>>>> 1f9d50190 (ui)
